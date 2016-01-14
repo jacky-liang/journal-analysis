@@ -16,7 +16,7 @@ class EntriesDataObject:
         return name + ".edo" if not name.endswith(".edo") else name
         
     @staticmethod
-    def load_edo(name):
+    def load(name):
         file = open(EntriesDataObject._get_file_name(name), 'r')
         obj = load(file)
         file.close()
