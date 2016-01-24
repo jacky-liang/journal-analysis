@@ -220,8 +220,3 @@ fv = [array(v) for v in freq_vectors]
 def cos_sim(u, v):
     return dot(u, v) / norm(u) / norm(v)
     
-for i in range(len(fv) - 2):
-    u, v, w = fv[i], fv[i+1], fv[i+2]
-    d1 = v - u
-    d2 = w - v
-    print cos_sim(d1, d2)
